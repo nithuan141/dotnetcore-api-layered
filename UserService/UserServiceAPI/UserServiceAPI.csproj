@@ -28,7 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ApiBase\ApiBase.csproj" />
-    <ProjectReference Include="..\..\KeyServiceDataProvider\AssetServiceDataProvider.csproj" />
+    <ProjectReference Include="..\..\AssetServiceDataProvider\AssetServiceDataProvider.csproj" />
   </ItemGroup>
 
 

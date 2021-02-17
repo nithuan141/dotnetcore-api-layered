@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserServiceAPI", "UserServi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserServiceTest", "UserService\UserServiceTest\UserServiceTest.csproj", "{A442938C-5FB6-4675-A979-0A178A20AFBF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetServiceDataProvider", "KeyServiceDataProvider\AssetServiceDataProvider.csproj", "{5331B089-3C14-49D7-B355-3D00CCD51A37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetServiceDataProvider", "AssetServiceDataProvider\AssetServiceDataProvider.csproj", "{8C9B7D9D-A44F-4016-B559-0F125E0220F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,10 @@ Global
 		{A442938C-5FB6-4675-A979-0A178A20AFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A442938C-5FB6-4675-A979-0A178A20AFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A442938C-5FB6-4675-A979-0A178A20AFBF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5331B089-3C14-49D7-B355-3D00CCD51A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5331B089-3C14-49D7-B355-3D00CCD51A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5331B089-3C14-49D7-B355-3D00CCD51A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5331B089-3C14-49D7-B355-3D00CCD51A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9B7D9D-A44F-4016-B559-0F125E0220F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9B7D9D-A44F-4016-B559-0F125E0220F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9B7D9D-A44F-4016-B559-0F125E0220F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9B7D9D-A44F-4016-B559-0F125E0220F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

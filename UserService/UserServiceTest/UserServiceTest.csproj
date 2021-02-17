@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\AssetServiceDataProvider\AssetServiceDataProvider.csproj" />
     <ProjectReference Include="..\UserServiceAPI\UserServiceAPI.csproj" />
   </ItemGroup>
 
