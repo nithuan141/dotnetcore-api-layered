@@ -26,3 +26,15 @@ I still beleive there are scenarios for building REST API using the layered arch
 <strong>Documetation :</strong> The swagger documentation has been used and it is configured using Swashbuckle in the middleware. (<a href="https://www.c-sharpcorner.com/article/swagger-integration-with-webapi-2-in-mvc/#:~:text=Swashbuckle/Swagger%20is%20simple%20and%20powerful%20representation%20of%20any,other%20third%20party%20testing%20tool%20(Postman,%20Fiddler%20etc"> More here</a>)
 
 <strong>ORM :</strong> EntityFrameworkCore 5.0 is used for ORM.
+
+<strong>Data Layer : </strong> Data layer is built using the repository pattern.
+
+<strong>Authentication : </string> AspNetCore.Authentication.JwtBearer Package is used to introduce JWT token based authentication and authorization. This can be easily replaced with AAD or any other oauth based identity provider by configuring the middleware in start-up and changing the AutheticationService in the service layer. As of now role-based authorization is also implemented using JWT  token.
+
+# Run
+
+Once cloned/downloaded you can run this API in IISExpres, IIS or Kestrel servers.
+
+# Contribute
+
+All contributions and corrections/fixes are welcome, please feel free to create a branch and make your changes and then create a pull request to merge that to main branch.
