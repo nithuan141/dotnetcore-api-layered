@@ -25,7 +25,7 @@ I still beleive there are scenarios for building REST API using the layered arch
 
 <strong>Validation :</strong> Fluent validation is used for the validation. (<a href="https://docs.fluentvalidation.net/en/latest/aspnet.html">More about Fluent validation here</a>)
 
-<strong>Documetation :</strong> The swagger documentation has been used and it is configured using Swashbuckle in the middleware. (<a href="https://www.c-sharpcorner.com/article/swagger-integration-with-webapi-2-in-mvc/#:~:text=Swashbuckle/Swagger%20is%20simple%20and%20powerful%20representation%20of%20any,other%20third%20party%20testing%20tool%20(Postman,%20Fiddler%20etc"> More here</a>)
+<strong>Documentation :</strong> The swagger documentation has been used and it is configured using Swashbuckle in the middleware. (<a href="https://www.c-sharpcorner.com/article/swagger-integration-with-webapi-2-in-mvc/#:~:text=Swashbuckle/Swagger%20is%20simple%20and%20powerful%20representation%20of%20any,other%20third%20party%20testing%20tool%20(Postman,%20Fiddler%20etc"> More here</a>)
 
 <strong>Data Layer : </strong> Data layer is built using the repository pattern.
 
