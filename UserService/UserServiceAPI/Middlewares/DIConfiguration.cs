@@ -66,7 +66,6 @@ namespace UserServiceAPI.Middlewares
         /// Adding the initial data.
         /// </summary>
         /// <param name="app"></param>
-        /// <param name="context"></param>
         public static void SetUpInitialData(this IApplicationBuilder app)
         {
             using var scope = app.ApplicationServices.CreateScope();

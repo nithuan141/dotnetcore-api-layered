@@ -62,7 +62,7 @@ namespace UserServiceTest
             {
                 this.assetService.Update(this.AssetDTOMockdata.First());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Assert.Fail();
             }
@@ -76,7 +76,7 @@ namespace UserServiceTest
             {
                 this.assetService.Delete(this.AssetDTOMockdata.First());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Assert.Fail();
             }

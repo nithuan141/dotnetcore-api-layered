@@ -30,7 +30,6 @@ namespace UserServiceAPI.Services.Contracts
         /// <summary>
         /// Fetches and return all the users.
         /// </summary>
-        /// <param name="userDTO"></param>
         /// <returns>List of users.</returns>
         Task<IList<UserDTO>> FetchAllUsers();
 

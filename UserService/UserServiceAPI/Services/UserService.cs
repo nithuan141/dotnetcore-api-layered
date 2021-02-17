@@ -78,7 +78,6 @@ namespace UserServiceAPI.Services
         /// <summary>
         /// Fetches and return all the users.
         /// </summary>
-        /// <param name="userDTO"></param>
         /// <returns>List of users.</returns>
         public async Task<IList<UserDTO>> FetchAllUsers()
         {
