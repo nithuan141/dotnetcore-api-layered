@@ -11,4 +11,4 @@ I still beleive there are scenarios for building REST API using the layered arch
 
 # Architecture
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/nithuan141/dotnetcore-api-layered/blob/main/architecture.PNG)
