@@ -1,3 +1,5 @@
+![.NET](https://github.com/nithuan141/dotnetcore-api-layered/workflows/.NET/badge.svg?branch=main)
+
 # Dot net core 3.1 REST API - Layerd architecture
 
 Ready to start boiler plates for .net core 3.1 REST API with layered architecture and repository pattern.
