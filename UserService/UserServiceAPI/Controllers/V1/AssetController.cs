@@ -11,6 +11,9 @@ using UserServiceAPI.Services.Contracts;
 
 namespace UserServiceAPI.Controllers.V1
 {
+    /// <summary>
+    /// The asset controller class.
+    /// </summary>
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
@@ -30,6 +33,11 @@ namespace UserServiceAPI.Controllers.V1
             this.assetService = _assetService;
         }
 
+        /// <summary>
+        /// Asset creation.
+        /// </summary>
+        /// <param name="asset">Asset model object.</param>
+        /// <returns></returns>
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Post(AssetDTO asset)
@@ -40,6 +48,11 @@ namespace UserServiceAPI.Controllers.V1
             return Ok(createdAsset.AssetId);
         }
 
+        /// <summary>
+        /// Asset updation.
+        /// </summary>
+        /// <param name="asset">Asset model object.</param>
+        /// <returns></returns>
         [HttpPut]
         [Authorize(Roles = "Admin")]
         public IActionResult Put(AssetDTO asset)
@@ -48,6 +61,11 @@ namespace UserServiceAPI.Controllers.V1
             return Ok();
         }
 
+        /// <summary>
+        /// Asset deletion.
+        /// </summary>
+        /// <param name="asset">Asset model object.</param>
+        /// <returns></returns>
         [HttpDelete]
         [Authorize(Roles = "Admin")]
         public IActionResult Delete(AssetDTO asset)
@@ -56,6 +74,10 @@ namespace UserServiceAPI.Controllers.V1
             return Ok();
         }
 
+        /// <summary>
+        /// API end point to fetch and return all assets.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Get()
@@ -64,6 +86,11 @@ namespace UserServiceAPI.Controllers.V1
             return Ok(assets);
         }
 
+        /// <summary>
+        /// Fethces a specific asset and return that.
+        /// </summary>
+        /// <param name="assetId"></param>
+        /// <returns></returns>
         [HttpGet("{assetId}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Get(Guid assetId)

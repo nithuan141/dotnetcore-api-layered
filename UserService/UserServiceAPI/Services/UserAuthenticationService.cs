@@ -45,15 +45,7 @@ namespace UserServiceAPI.Services
         /// <returns>User data with Access Token</returns>
         public async Task<UserDTO> Authenticate(UserDTO user)
         {
-            var loggedInuser = new UserDTO()
-            {
-                UserName = "Admin",
-                Password = PasswordHelper.Encrypt("Admin123"),
-                Role = "Admin",
-                CreatedDate = DateTime.UtcNow,
-                CreateBy = "System",
-                Status = 0
-            };
+            var loggedInuser = await this.GetUser(user.UserName, user.Password);
 
             if (loggedInuser != null)
             {
