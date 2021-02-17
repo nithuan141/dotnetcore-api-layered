@@ -29,7 +29,7 @@ I still beleive there are scenarios for building REST API using the layered arch
 
 <strong>Data Layer : </strong> Data layer is built using the repository pattern.
 
-<strong>Authentication : </string> AspNetCore.Authentication.JwtBearer Package is used to introduce JWT token based authentication and authorization. This can be easily replaced with AAD or any other oauth based identity provider by configuring the middleware in start-up and changing the AutheticationService in the service layer. As of now role-based authorization is also implemented using JWT  token.
+<strong>Authentication : </strong> AspNetCore.Authentication.JwtBearer Package is used to introduce JWT token based authentication and authorization. This can be easily replaced with AAD or any other oauth based identity provider by configuring the middleware in start-up and changing the AutheticationService in the service layer. As of now role-based authorization is also implemented using JWT  token.
 
 # Run
 
