@@ -33,7 +33,10 @@ I still beleive there are scenarios for building REST API using the layered arch
 
 # Run
 
-Once cloned/downloaded you can run this API in IISExpres, IIS or Kestrel servers.
+Once cloned/downloaded you can run this API in IISExpres, IIS or Kestrel servers. Also please remeber to add the connection string in the appsetting.json
+  ` "ConnectionString": {
+      "KeyServiceDB": "<-- Your connection String Here -->;"
+   }`
 
 # Contribute
 
