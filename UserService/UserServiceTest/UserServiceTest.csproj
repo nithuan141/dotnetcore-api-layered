@@ -5,6 +5,12 @@
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+	
+  <PropertyGroup>
+    <CollectCoverage>true</CollectCoverage>
+    <CoverletOutputFormat>cobertura</CoverletOutputFormat>
+    <CoverletOutput>coverage.xml</CoverletOutput>
+  </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
@@ -18,7 +24,17 @@
     <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="coverlet.msbuild" Version="3.0.3" IsImplicitlyDefined="true" PrivateAssets="all" Publish="true" />
+    <PackageReference Include="coverlet.collector" Version="3.0.3" IsImplicitlyDefined="true" PrivateAssets="all" Publish="true" />
+    <PackageReference Include="ReportGenerator" Version="4.8.6" IsImplicitlyDefined="true" PrivateAssets="all" Publish="true" />
   </ItemGroup>
+	
+  <Target Name="GenerateCoverageReport" AfterTargets="GenerateCoverageResultAfterTest">
+    <ItemGroup>
+      <CoverageFiles Include="coverage.xml" />
+    </ItemGroup>
+    <ReportGenerator ProjectDirectory="\" ReportFiles="@(CoverageFiles)" TargetDirectory="Coverage\Reports" ReportTypes="Html;Latex" HistoryDirectory="Coverage\History" VerbosityLevel="Verbose" />
+  </Target>
 
   <ItemGroup>
     <ProjectReference Include="..\..\AssetServiceDataProvider\AssetServiceDataProvider.csproj" />
